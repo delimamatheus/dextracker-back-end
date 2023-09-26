@@ -6,9 +6,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-        .setTitle('Documentos Unigran 1.1.1')
-        .setDescription('API envio e consulta documentos/diplomas')
-        .setVersion('1.05')
+        .setTitle('DEX Tracker API 1.0.0')
+        .setDescription('API')
+        .setVersion('1.00')
         .addBearerAuth(
             { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
             'access-token',
